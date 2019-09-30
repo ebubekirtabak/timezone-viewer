@@ -5,11 +5,15 @@ const state = {
     people: [
         {
             name: "Ebubekir Tabak",
-            timezone: "",
+            timeZone: "Europe/Istanbul",
         },
         {
             name: "Jonh Doe",
-            timezone:"",
+            timeZone: "Asia/Shanghai",
+        },
+        {
+            name: "Jane Doe",
+            timeZone: "Asia/Kolkata",
         }
     ]
 };
