@@ -6,4 +6,8 @@ const getLocaleTime = ((timeZone) => {
     return localeTime;
 });
 
+const PeopleCard = ({people}) => h("div", { class: "people-card" },
+    h("div", { class: "people_card__title"}, people.name),
+    h("div", { class: "people_card__title"}, getLocaleTime(people.timeZone).toLocaleString()),
+);
 export default PeopleCard;
