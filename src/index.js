@@ -20,7 +20,7 @@ app({
     view: state =>
         h("div", {}, [
             h("div", { class: "grid" }, state.people.map(item =>
-                h("div", { class: "grid__item" }, h(PeopleCard, {}, item.name))
+                h("div", { class: "grid__item" }, h(PeopleCard, {people: item}, {}))
             )),
         ]),
     node: document.getElementById("app")
