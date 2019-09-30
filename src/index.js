@@ -1,4 +1,6 @@
 import { h, app } from "hyperapp";
+import PeopleCard from './components/people-card';
+
 const state = {
     people: [
         {
@@ -17,9 +19,9 @@ app({
     init: state,
     view: state =>
         h("div", {}, [
-            h("h1", {}, state),
-            h("button", { onClick: state => state - 1 }, "-"),
-            h("button", { onClick: state => state + 1 }, "+")
+            h("div", { class: "grid" }, state.people.map(item =>
+                h("div", { class: "grid__item" }, h(PeopleCard, {}, item.name))
+            )),
         ]),
     node: document.getElementById("app")
 });
