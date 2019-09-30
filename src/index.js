@@ -1,7 +1,20 @@
 import { h, app } from "hyperapp";
+const state = {
+    people: [
+        {
+            name: "Ebubekir Tabak",
+            timezone: "",
+        },
+        {
+            name: "Jonh Doe",
+            timezone:"",
+        }
+    ]
+};
+
 
 app({
-    init: 0,
+    init: state,
     view: state =>
         h("div", {}, [
             h("h1", {}, state),
