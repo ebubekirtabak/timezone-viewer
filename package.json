@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "parcel ./src/index.html --out-dir ./dist"
+  },
+  "dependencies": {
+    "hyperapp": "^2.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
